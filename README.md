@@ -30,9 +30,8 @@ I followed the MVVM pattern to keep the code clean:
 
 ## 📸 Screenshots
 <p align="center">
-<img src="YOUR_IMAGE_URL_HERE" width="250" />
-<!-- Example:  -->
-<!-- Add more images here side by side -->
+<img width="250" height="440" alt="image" src="https://github.com/user-attachments/assets/3bb3d00d-22e5-4aaf-a2b8-41e75fc2f84f" />
+<img width="250" height="440" alt="image" src="https://github.com/user-attachments/assets/57b74728-37cf-476c-a75c-6ac3a740916a" />
 </p>
 
 ## 🚀 How to Run

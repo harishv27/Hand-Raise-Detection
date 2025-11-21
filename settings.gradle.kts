@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        google() // <-- Use the simple, non-restrictive form here
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "PoseDetection"
+include(":app")

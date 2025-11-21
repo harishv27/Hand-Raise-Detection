@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PoseDetection">
         <activity
-            android:name=".activity_intro"
+            android:name=".ActivityIntro"
             android:exported="true"
             android:theme="@style/Theme.PoseDetection">
             <intent-filter>

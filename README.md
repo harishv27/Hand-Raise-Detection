@@ -28,6 +28,13 @@ I followed the MVVM pattern to keep the code clean:
 * **`PoseViewModel` (ViewModel):** This is the brain. It receives raw data from ML Kit, performs the coordinate math and frame counting, and decides when to update the UI or trigger the voice.
 * **`DetectionResult` (Model):** A simple data class that holds the current state.
 
+## 📸 Screenshots
+<p align="center">
+<img src="YOUR_IMAGE_URL_HERE" width="250" />
+<!-- Example:  -->
+<!-- Add more images here side by side -->
+</p>
+
 ## 🚀 How to Run
 1.  Clone the repository.
 2.  Open in Android Studio.

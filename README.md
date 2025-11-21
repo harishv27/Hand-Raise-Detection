@@ -10,12 +10,12 @@ I focused on making the detection "stable" rather than just sensitive, so it doe
 ## 🛠️ Tech Stack & Libraries
 * **Language:** Kotlin
 * **Architecture:** MVVM (Model-View-ViewModel)
-* [cite_start]**ML Library:** Google ML Kit (Pose Detection - Accurate Model) [cite: 9]
+* **ML Library:** Google ML Kit (Pose Detection - Accurate Model)
 * **Camera:** CameraX
 * **UI:** XML with Material Design components
 
 ## 🧠 How the Logic Works
-Detecting a hand raise sounds simple, but there are a few edge cases I had to handle. [cite_start]Here is the logic I implemented[cite: 27]:
+Detecting a hand raise sounds simple, but there are a few edge cases I had to handle. Here is the logic I implemented:
 
 1.  **Coordinate Check:** In Android, the Y-axis value *decreases* as you go up the screen. So, I check if the `Wrist_Y` coordinate is significantly smaller than the `Shoulder_Y` coordinate.
 2.  **The "Buffer" Zone:** To prevent false positives (like when your hand is just resting near your shoulder), I added a 5% threshold buffer. The wrist has to be clearly above the shoulder line.
@@ -23,7 +23,7 @@ Detecting a hand raise sounds simple, but there are a few edge cases I had to ha
 4.  **Voice Cooldown:** To stop the app from spamming the voice message repeatedly, I added a 10-second timer. Once it speaks, it won't speak again for 10 seconds, even if you keep your hand up.
 
 ## 🏗️ Architecture (MVVM)
-[cite_start]I followed the MVVM pattern to keep the code clean[cite: 7, 28]:
+I followed the MVVM pattern to keep the code clean:
 * **`MainActivity` (View):** Handles the Camera permission, setups up the UI, and manages the Text-to-Speech engine. It observes changes but doesn't do any math.
 * **`PoseViewModel` (ViewModel):** This is the brain. It receives raw data from ML Kit, performs the coordinate math and frame counting, and decides when to update the UI or trigger the voice.
 * **`DetectionResult` (Model):** A simple data class that holds the current state.

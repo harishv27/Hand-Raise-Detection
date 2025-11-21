@@ -3,7 +3,7 @@ This Android application detects when a user raises their hand using the device 
 
 
 ## 📱 What does it do?
-The app opens the camera and continuously scans for body language. When it sees you raising your hand Supports both hands(left and right) specifically, when your wrist goes above your shoulder), it triggers a Text-to-Speech engine to say, *"Hand detected, how can I help you?"*
+The app opens the camera and continuously scans for body language. When it sees you raising your hand Supports both hands(left and right) specifically, when your wrist goes above your shoulder, it triggers a Text-to-Speech engine to say, *"Hand detected, how can I help you?"*
 
 I focused on making the detection "stable" rather than just sensitive, so it doesn't trigger accidentally when you are just moving around.
 
